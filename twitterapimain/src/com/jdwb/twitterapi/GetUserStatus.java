@@ -3,6 +3,7 @@ package com.jdwb.twitterapi;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import twitter4j.Paging;
 import twitter4j.Query;
@@ -76,8 +77,17 @@ public class GetUserStatus {
                {
             	   System.out.println("exception occurs"+e);
                }*/
+		      int count=0;
+		      StringTokenizer st = new StringTokenizer(s," ");
+		        while(st.hasMoreTokens()){
+		        	{
+		        		if (st.nextToken().equals(""))
+		        	
+		        	{
+	
 		      
-		      
+		        	}
+		        }
 		    	 
 		        if(t.getId() < lastID) 
 		        	{
@@ -86,6 +96,7 @@ public class GetUserStatus {
 
 		    }
 		      
+		      }
 		    }
 
 		    catch (TwitterException te) {
