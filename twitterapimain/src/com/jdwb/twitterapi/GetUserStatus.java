@@ -38,7 +38,7 @@ public class GetUserStatus {
 		Query query = new Query("haircut");//giving the keyword  which has to be there in the tweet
      
 	
-		int numberOfTweets = 10;//the number of tweets that is needed
+		int numberOfTweets = 1000;//the number of tweets that is needed
 		  long lastID = Long.MAX_VALUE;
 		  ArrayList<Status> tweets = new ArrayList<Status>();
 		  
@@ -82,7 +82,6 @@ public class GetUserStatus {
 		        while(st.hasMoreTokens()){
 		        	{
 		        		if (st.nextToken().equals(""))
-		        	
 		        	{
 	
 		      
